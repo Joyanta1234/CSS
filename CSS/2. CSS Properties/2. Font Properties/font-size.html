@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Font-Size</title>
+  <style>
+    #pixel {
+      font-size: 20px;
+    }
+
+    /* point works like word. In word document if we select the font size 20 in the word
+    it means the font size in 20 point */
+
+    #point {
+      font-size: 20pt;
+    }
+
+    /* em works like a child and it changes the way the parent */
+    /* here parent is footer and the size of the footer is 20px. */
+    /* so, em= child(p id=em)*parent(footer)=2em*20px=40px */
+    #em {
+      font-size: 2em;
+    }
+
+    /* here, rem works with root. Root is html and here html is 10px. */
+    /* So, rem= root(html)*child(p id=rem)=10px*2rem=20px */
+
+    #rem {
+      font-size: 2rem;
+    }
+
+    footer {
+      font-size: 20pt;
+    }
+
+    html {
+      font-size: 10px;
+    }
+  </style>
+
+</head>
+<html lang="en">
+
+<body>
+  <p id="pixel">1 Pixel is 1/96 of an Inch</p>
+  <p id="point">1 Point is 1/72 of an Inch</p>
+  <footer>
+    <p id="em">1em is 100% the size of the parent element</p>
+    <p id="rem">1rem is 100% the size of the root element</p>
+  </footer>
+</body>
+
+</html>
