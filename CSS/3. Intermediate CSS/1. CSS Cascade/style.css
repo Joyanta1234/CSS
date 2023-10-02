@@ -1,0 +1,38 @@
+/* Don't change the existing CSS. */
+
+/* Id selector first. */
+
+#outer-box{
+  background-color: purple;
+}
+
+
+/* One thing is that we have to make sure our .inner-box class is below the .box cause because of the positioning rule as both as class the .box will be apply first */
+/* Now, if we write .inner-box above the .box then .inner-box will rule our .box rule */
+/* so positioning is really important. */
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+/* Let me explain this. Why not div[class="box inner-box"]? */
+/* It's main reason is in the class section we learn that we can write many class name like "Joy an ta" this and the last one will be counted */
+/* Means, if we write 3 classes like. .Joy . an .ta then .ta will be counted. */
+/* So, here, the class name is box inner-box. so, here, .inner-box{} will be counted. */
+.inner-box{
+  background-color: red;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.white-text{
+  color: white;
+}
+
+

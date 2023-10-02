@@ -1,0 +1,45 @@
+/* Write your code here: */
+
+/* Here, It is an grouping! Means we group h1 and h2 using */
+/* a coma and a space. The css rule will be applied to the whole group means both h1 and h2 will be colored blueviolet */
+h1 , h2{
+    color: blueviolet;
+}
+
+/* It is a child combine css. */
+/* Means here, parent is div and p tag is the direct child of div */
+/* So, using this > we can use the child combine.  */
+/* There are 2 direct child of div one is p and another one is ul */
+/* so we can also use .box > ul to change the rule */
+/* why we used class? cause there are more p tag we have to specifically select the child that's why we selected the class and then > the child */
+/* But here li inside the ul is not a direct child they are grand child so we can't select them */
+.box > p{
+    color: firebrick;
+}
+
+
+/* This is a desendent combination */
+/* Here, .box is the ancestor and li is the decendent. There are a lot of decendent. So, for all the rule is true. */
+.box li{
+    color: blue;
+}
+
+
+/* It is a chainning method */
+/* Here, we combine the selectors to make it a unique selector without any space. */
+/* like there are a lot of li, then class done. so how can we only select the li which are class done? */
+/* For this we selected the li(must use element in first) and selected the class done to make it unique.*/
+
+li.done{
+    color: seagreen;
+}
+
+/* it is combining combiners. */
+/* Why we use it? */
+/* Here, in the html you can see there are 2 ul and we want to change the 2nd ul p tag size. */
+/* Now, there are 2 ul and in the first ul there are no p and 2nd one have p and all p has the same class-"done" */
+/* So, we used this method where ul is the ancestor and p.done are the decendents and p.done is the chainning. */
+
+ul p.done{
+    font-size: 0.5rem;
+}
